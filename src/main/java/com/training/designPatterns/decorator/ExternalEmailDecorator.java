@@ -16,6 +16,6 @@ class ExternalEmailDecorator implements IEmail {
 
 	private String addDisclaimer(String message) {
 		// append company disclaimer to message
-		return message + "\n Company Disclaimer";
+		return message + "_Company Disclaimer";
 	}
 }

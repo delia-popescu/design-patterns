@@ -1,4 +1,4 @@
-package com.training.designPatterns.asbtractFactory;
+package com.training.designPatterns.abstractFactory;
 
 import java.util.Map;
 import java.util.Set;

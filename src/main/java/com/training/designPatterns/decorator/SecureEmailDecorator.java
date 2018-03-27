@@ -17,6 +17,6 @@ public class SecureEmailDecorator implements IEmail {
 
 	private String encrypt(String message) {
 		// encrypt the string
-		return "encryptedMessage";
+		return message + "_encryptedMessage";
 	}
 }

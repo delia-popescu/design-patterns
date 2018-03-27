@@ -1,4 +1,4 @@
-package com.training.designPatterns.asbtractFactory;
+package com.training.designPatterns.abstractFactory;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -14,5 +14,4 @@ public class HashCollectionFactory<T, V> implements AbstractCollectionFactory<T,
 	public Map<T, V> makeMap() {
 		return new HashMap<T, V>();
 	}
-
 }

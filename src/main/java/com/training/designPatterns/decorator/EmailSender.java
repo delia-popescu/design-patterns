@@ -1,11 +1,15 @@
 package com.training.designPatterns.decorator;
 
 public class EmailSender {
-	public void sendEmail(IEmail email) {
-		// read the email to-address, to see if it's going outside of the company
-		// if so decorate it
-		ExternalEmailDecorator external = new ExternalEmailDecorator(email);
-		external.getContents();
-		// send }
+	
+	public static void sendEmail(IEmail email) {
+		SecureEmailDecorator decorator = new SecureEmailDecorator(new ExternalEmailDecorator(email));
+		System.out.println(decorator.getContents());
+	}
+	
+	
+	public static void main(String[] args) {
+		Email email = new Email("text email");
+		sendEmail(email);
 	}
 }
